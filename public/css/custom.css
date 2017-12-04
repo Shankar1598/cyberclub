@@ -39,13 +39,13 @@
 
 @media (min-width: 768px){
   .navUser{
-    position: absolute;
-    right: 7%;
+/*     position: absolute; */
+/*     right: 7%; */
   }
   #sign-out{
-    position: absolute;
-    right: 2%;
-    padding: 1.4%;
+/*     position: absolute; */
+/*     right: 2%; */
+/*     padding: 1.4%; */
   }
 
   #loginBtn{
