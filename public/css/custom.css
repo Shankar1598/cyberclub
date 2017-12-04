@@ -1,0 +1,124 @@
+/*html,body{
+  height: 100%;
+}*/
+/*Home page*/
+#text-carousel-intro-section{
+  background: url("../img/kali.jpg");
+  /*background: white;*/
+  background-position: center !important;
+}
+
+#main-navbar{
+  background: #942628;
+  color: white!important;
+}
+.page-scroll{
+  color: #ffffff!important;
+}
+
+.navUser{
+  padding: 16px;
+  margin: 10px 0;
+  background: #942628;
+  border: solid 1.5px white;
+  border-radius: 25px !important;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  float: right;
+}
+
+#sign-out{
+  float: right;
+  padding: 2.2%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px){
+  .navUser{
+    position: absolute;
+    right: 7%;
+  }
+  #sign-out{
+    position: absolute;
+    right: 2%;
+    padding: 1.4%;
+  }
+
+  #loginBtn{
+    right: 4%;
+  }
+}
+
+/*Loin Page*/
+
+#login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fff;
+}
+
+.login-box{
+  /*flex: 0;*/
+  text-transform: uppercase;
+  padding: 3.5% 3%;
+  border: solid 1px black;
+  background: #17150a;
+  color: white;
+}
+
+.login-box .form-group label{
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.login-box h3{
+  margin-bottom: 5%;
+}
+
+.login-box input{
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: #2a2a2a;
+  box-shadow: none;
+}
+
+.login-box input:focus{
+  background-color: #171717;
+}
+
+.submit:hover{
+  background-color: #94262863;
+}
+.submit{
+  background-color: #942628;
+  color: white;
+  text-transform: uppercase;
+}
+
+#login-with{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#login-with .btn{
+  font-weight: 600 !important;
+  font-size: .8rem !important;
+  margin-top: 2%;
+}
+
+#signup-btn{
+  font-size: .9rem;
+  padding: 5%;
+}
+
+.subBtns{
+  display: inline;
+}

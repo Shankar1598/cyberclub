@@ -1,0 +1,106 @@
+[debug] [2017-12-04T02:15:49.875Z] ----------------------------------------------------------------------
+[debug] [2017-12-04T02:15:49.878Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shank\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-12-04T02:15:49.878Z] CLI Version:   3.15.4
+[debug] [2017-12-04T02:15:49.878Z] Platform:      win32
+[debug] [2017-12-04T02:15:49.878Z] Node Version:  v6.11.3
+[debug] [2017-12-04T02:15:49.879Z] Time:          Mon Dec 04 2017 07:45:49 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:15:49.879Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-04T02:15:49.996Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-04T02:15:49.997Z] > authorizing via signed-in user
+[debug] [2017-12-04T02:15:50.004Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-04T02:15:50.005Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/Lt60sWzjtmUNMCKUWdK74MjN-f8TJxUbPKR-Kqm8Mkc',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Dec 04 2017 07:45:50 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:15:50.276Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-04T02:15:50.317Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/cyberclub-84603  
+ Mon Dec 04 2017 07:45:50 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:15:51.435Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-04T02:15:51.437Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/cyberclub-84603/tokens  
+ Mon Dec 04 2017 07:45:51 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:15:52.424Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'E:\wamp64\www\VIT GameClub\tagclub.in'...
+[info] 
+[debug] [2017-12-04T02:15:52.437Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cyberclub-84603  
+ Mon Dec 04 2017 07:45:52 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:15:53.930Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-04T02:15:53.931Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/402508135066/clients/_:getWebAppConfig  
+ Mon Dec 04 2017 07:45:53 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:15:55.380Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-04T02:15:55.716Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (C:\Users\shank\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\hosting.js:34:17)
+    at Server.g (events.js:292:16)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:185:7)
+    at emitListeningNT (net.js:1284:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-12-04T02:17:01.201Z] ----------------------------------------------------------------------
+[debug] [2017-12-04T02:17:01.204Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shank\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-12-04T02:17:01.205Z] CLI Version:   3.15.4
+[debug] [2017-12-04T02:17:01.205Z] Platform:      win32
+[debug] [2017-12-04T02:17:01.205Z] Node Version:  v6.11.3
+[debug] [2017-12-04T02:17:01.205Z] Time:          Mon Dec 04 2017 07:47:01 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:17:01.206Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-04T02:17:01.218Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-04T02:17:01.219Z] > authorizing via signed-in user
+[debug] [2017-12-04T02:17:01.222Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/cyberclub-84603  
+ Mon Dec 04 2017 07:47:01 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:17:02.373Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-04T02:17:02.376Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/cyberclub-84603/tokens  
+ Mon Dec 04 2017 07:47:02 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:17:03.925Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'E:\wamp64\www\VIT GameClub\tagclub.in'...
+[info] 
+[debug] [2017-12-04T02:17:03.935Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cyberclub-84603  
+ Mon Dec 04 2017 07:47:03 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:17:05.260Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-04T02:17:05.261Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/402508135066/clients/_:getWebAppConfig  
+ Mon Dec 04 2017 07:47:05 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:17:05.780Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-04T02:17:05.823Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (C:\Users\shank\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\hosting.js:34:17)
+    at Server.g (events.js:292:16)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:185:7)
+    at emitListeningNT (net.js:1284:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-12-04T02:20:31.336Z] ----------------------------------------------------------------------
+[debug] [2017-12-04T02:20:31.338Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shank\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-12-04T02:20:31.339Z] CLI Version:   3.15.4
+[debug] [2017-12-04T02:20:31.339Z] Platform:      win32
+[debug] [2017-12-04T02:20:31.339Z] Node Version:  v6.11.3
+[debug] [2017-12-04T02:20:31.340Z] Time:          Mon Dec 04 2017 07:50:31 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:20:31.340Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-04T02:20:31.356Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-04T02:20:31.356Z] > authorizing via signed-in user
+[debug] [2017-12-04T02:20:31.359Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/cyberclub-84603  
+ Mon Dec 04 2017 07:50:31 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:20:32.691Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-04T02:20:32.694Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/cyberclub-84603/tokens  
+ Mon Dec 04 2017 07:50:32 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:20:33.713Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'E:\wamp64\www\VIT GameClub\tagclub.in'...
+[info] 
+[debug] [2017-12-04T02:20:33.727Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cyberclub-84603  
+ Mon Dec 04 2017 07:50:33 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:20:35.058Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-04T02:20:35.059Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/402508135066/clients/_:getWebAppConfig  
+ Mon Dec 04 2017 07:50:35 GMT+0530 (India Standard Time)
+[debug] [2017-12-04T02:20:36.359Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

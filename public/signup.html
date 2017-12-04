@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>User Account</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-social.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- firebase sdk -->
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+
+</head>
+
+<body>
+
+    <!--========== BEGIN HEADER ==========-->
+    <header id="header" class="header-main">
+        <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <center>
+                <h3 style="padding:.5%;">Login</h3>
+            </center>
+        </nav>
+    </header>
+    <!-- ========= END HEADER =========-->
+
+
+    <div class="" id="login-container">
+        <div class="login-box col-md-5 col-sm-10">
+            <div class="login-content">
+                <!-- <h3 >Login</h3> -->
+                <fieldset class="form-group">
+                    <label for="email">First Name</label>
+                    <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="email">Last Name</label>
+                    <input type="text" class="form-control" id="lname" placeholder="First Name" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </fieldset>
+                <fieldset class="subBtns">
+                    <button id="submit" class="btn submit" onclick="signupWithEmail()">Sign Up</button>
+                    <span>&nbsp;OR&nbsp;</span>
+                    <button id="submit" class="btn submit" onclick="window.location='login.html'">LogIn</button>
+                </fieldset>
+                <br>
+                <hr style="border-color:white">
+                <div id="login-with">
+                    <button type="button" class="btn btn-google" name="button" onclick="googleLogIn()">
+                        <span class="fa fa-google"></span> &nbsp; Sign in with Google
+                    </button>
+                    <button type="button" name="button" class="btn btn-facebook" onclick="facebookLogIn()">
+                        <span class="fa fa-facebook"></span> &nbsp; Sign in with Facebook
+                    </button>
+                    <button type="button" name="button" class="btn btn-github" onclick="gitHubLogIn()">
+                        <span class="fa fa-github"></span> &nbsp; Sign in with GitHub
+                    </button>
+                </div>
+                <div style="clear:both;padding:0;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
