@@ -18,7 +18,8 @@
 
 .navUser{
   padding: 16px;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-left: 24px;
   background: #942628;
   border: solid 1.5px white;
   border-radius: 25px !important;
@@ -27,7 +28,6 @@
   font-size: 13px;
   font-weight: 600;
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  float: right;
 }
 
 #sign-out{
@@ -121,4 +121,18 @@
 
 .subBtns{
   display: inline;
+}
+
+.logo{
+  width:60px
+}
+
+/* OVERWRITE */
+
+.navbar-collapse{
+  background: #942628;
+}
+
+.navbar-brand{
+  padding: 0;
 }

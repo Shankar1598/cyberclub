@@ -30,6 +30,11 @@
   <link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
   <link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
 
+  <!-- tz-gallery -->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link rel="stylesheet" href="fluid-gallery.css">
+
   <!-- Theme CSS -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -71,22 +76,20 @@
 
         <div class="container">
 
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
+           <!-- Brand and toggle get grouped for better mobile display -->
+           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-            <a class="navbar-brand page-scroll" href="index.html">TAG</a>
+            <a class="navbar-brand page-scroll" href="index.html"><img src="img/cyber.png" class="logo" style="" alt="Logo here"></a>
           </div>
-
+          
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             
-            <button class="nav navbar-nav navbar-right navUser hidden" id="userBtn" name="button" onclick="login()">User Space</button>
-            <button type="button" class="nav navbar-nav navbar-right navUser" id="loginBtn" name="button" onclick="login()">Login / Sign Up</button>
             <i class="fa fa-sign-out hidden" id="sign-out" onclick="signOutCall()"></i>
             <ul class="nav navbar-nav navbar-right">
               <li><a class="page-scroll" href="body.html">Home</a></li>
@@ -96,6 +99,12 @@
               <li><a class="page-scroll" href="#team-section">Team</a></li>
               <!--li><a class="page-scroll" href="#prices-section">Prices</a></li-->
               <li><a class="page-scroll" href="#contact-section">Contact</a></li>
+              <li>
+                <button class="nav navbar-nav navbar-right navUser hidden" id="userBtn" name="button" onclick="login()">User Space</button>
+              </li>
+              <li>
+                <button type="button" class="nav navbar-nav navbar-right navUser" id="loginBtn" name="button" onclick="login()">Login / Sign Up</button>
+              </li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -119,18 +128,18 @@
           <div id="owl-intro-text" class="owl-carousel">
 
             <div class="item">
-              <h1>Security</h1>
-              <p>Where Security becomes Threat!</p>
+              <h1>Technology</h1>
+              <p>WHen Technology becomes a Threat!</p>
               <div class="extra-space-l"></div>
             </div>
             <div class="item">
-              <h1>Technology</h1>
-              <p>Where Technology becomes a Vulnerability!</p>
+              <h1>Information</h1>
+              <p>When Information is under stake!</p>
               <div class="extra-space-l"></div>
             </div>
             <div class="item">
               <h1>CyberSecurity</h1>
-              <p>CyberSecurity comes to Play!</p>
+              <p>CyberSecurity comes to Rescue!</p>
               <div class="extra-space-l"></div>
             </div>
           </div>
@@ -387,56 +396,55 @@
           <div class="page-header-wrapper">
             <div class="container">
               <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                <h2>Current Stats</h2>
+                <h2>Events and Achivements</h2>
                 <div class="devider"></div>
                 <p class="subtitle">Before anyone else tells you</p>
               </div>
             </div>
           </div>
           <!-- End page header-->
-          <div class="container">
+          <div class="tz-gallery">
 
             <div class="row">
-
-              <div class="fact text-center col-md-3 col-sm-6">
-                <div class="fact-inner">
-                  <i class="fa fa-users fa-3x"></i>
-                  <div class="extra-space-l"></div>
-                  <span class="counter">1000</span>+
-                  <p class="lead">Member Enroled</p>
-                </div>
+              
+              <div class="col-sm-12 col-md-4">
+                  <a class="lightbox" href="images/bridge.jpg">
+                      <img src="images/bridge.jpg" alt="Bridge">
+                  </a>
               </div>
-
-              <div class="fact text-center col-md-3 col-sm-6">
-                <div class="fact-inner">
-                  <i class="fa fa-gamepad fa-3x"></i>
-                  <div class="extra-space-l"></div>
-                  <span class="counter">5</span>
-                  <p class="lead">Workshops Conducted</p>
-                </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="images/park.jpg">
+                      <img src="images/park.jpg" alt="Park">
+                  </a>
               </div>
-
-              <div class="fact text-center col-md-3 col-sm-6">
-                <div class="fact-inner">
-                  <i class="fa fa-trophy fa-3x"></i>
-                  <div class="extra-space-l"></div>
-                  <span class="counter">200000</span>
-                  <p class="lead">Prize Money</p>
-                </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="images/tunnel.jpg">
+                      <img src="images/tunnel.jpg" alt="Tunnel">
+                  </a>
               </div>
-
-              <div class="fact last text-center col-md-3 col-sm-6">
-                <div class="fact-inner">
-                  <i class="fa fa-clock-o fa-3x"></i>
-                  <div class="extra-space-l"></div>
-                  <span class="counter">10</span>
-                  <p class="lead">Competitions</p>
-                </div>
+              <div class="col-sm-12 col-md-8">
+                  <a class="lightbox" href="images/traffic.jpg">
+                      <img src="images/traffic.jpg" alt="Traffic">
+                  </a>
               </div>
-
-            </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="images/coast.jpg">
+                      <img src="images/coast.jpg" alt="Coast">
+                  </a>
+              </div> 
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="images/rails.jpg">
+                      <img src="images/rails.jpg" alt="Rails">
+                  </a>
+              </div>
+  
+          </div>
             <!-- /.row -->
           </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+          <script>
+              baguetteBox.run('.tz-gallery');
+          </script>
           <!-- /.container -->
         </div>
       </section>
