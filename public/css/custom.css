@@ -3,7 +3,10 @@
 }*/
 /*Home page*/
 #text-carousel-intro-section{
-  background: url("../img/kali.jpg");
+  background: url("../img/kali4.jpg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
   /*background: white;*/
   background-position: center !important;
 }
