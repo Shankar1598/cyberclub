@@ -31,9 +31,11 @@
 }
 
 #sign-out{
-  float: right;
-  padding: 2.2%;
-  font-size: 20px;
+  /* float: right; */
+  padding: 24px 0;
+  margin-left: 25px;
+  font-size: 24px;
+  font-weight: 600;
   cursor: pointer;
 }
 
