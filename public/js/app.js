@@ -147,7 +147,8 @@ function signOutCall(){
 
 function SignUp(){
 
-  email=document.getElementById("email").value;
+  alert("signing up");
+  email=validateEmail(document.getElementById("email").value);
   password=document.getElementById("password").value;
 
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
@@ -156,5 +157,12 @@ function SignUp(){
     var errorMessage = error.message;
     // ...
   });
+  alert("success");
+
   loginSuccess();
+}
+
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
 }
