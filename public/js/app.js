@@ -165,7 +165,7 @@ function SignUp(){
     }
     console.log(error);
   });
-  loginSuccess();
+  // loginSuccess();
 }
 
 function validateEmail(email) {
