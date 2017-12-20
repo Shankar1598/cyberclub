@@ -155,15 +155,17 @@ function SignUp(){
   }
   password=document.getElementById("password").value;
 
-  user=firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-    // Handle Errors here.
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
     var errorCode = error.code;
     var errorMessage = error.message;
-    // ...
+    if (errorCode == 'auth/weak-password') {
+      alert('The password is too weak.');
+    } else {
+      alert(errorMessage);
+    }
+    console.log(error);
   });
-  // alert("success");
-  console.log(user.User);
-  // loginSuccess();
+  loginSuccess();
 }
 
 function validateEmail(email) {
