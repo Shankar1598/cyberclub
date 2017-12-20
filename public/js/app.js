@@ -148,7 +148,7 @@ function signOutCall(){
 function SignUp(){
 
   alert("signing up");
-  email=validateEmail(document.getElementById("email").value);
+  email=document.getElementById("email").value;
   password=document.getElementById("password").value;
 
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
