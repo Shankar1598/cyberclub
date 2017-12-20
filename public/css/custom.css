@@ -136,6 +136,13 @@
   text-align: justify;
 }
 
+.partners-warp{
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 /* OVERWRITE */
 
 .navbar-collapse{
@@ -148,4 +155,12 @@
 
 .rotate-box-1-wrapper{
   text-align: justify !important;
+}
+
+.scrolltotop{
+  background: #1b1b1b50;
+}
+
+.cta-section{
+  background: wheat;
 }
