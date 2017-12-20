@@ -147,19 +147,22 @@ function signOutCall(){
 
 function SignUp(){
 
-  alert("signing up");
+  // alert("signing up");
   email=document.getElementById("email").value;
+  if(!(validateEmail(email))){
+    alert("Enter a valid email");
+  }
   password=document.getElementById("password").value;
 
-  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+  user=firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
     // ...
   });
-  alert("success");
-
-  loginSuccess();
+  // alert("success");
+  console.log(user.User);
+  // loginSuccess();
 }
 
 function validateEmail(email) {
