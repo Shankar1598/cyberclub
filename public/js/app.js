@@ -149,6 +149,7 @@ function SignUp(){
 
   // alert("signing up");
   email=document.getElementById("email").value;
+  console.log(email)
   if(!(validateEmail(email))){
     alert("Enter a valid email");
   }
